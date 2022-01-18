@@ -23,7 +23,8 @@ const MovieHeader = (props) => {
 
 const mapStateToProps = (state) => {
     return({
-        appTitle: movieReducer.appTitle
+        displayFavorites: state.favoritesReducer.displayFavorites,
+        appTitle: state.movieReducer.appTitle
     })
 }
 
